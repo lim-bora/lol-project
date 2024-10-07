@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link"; //Link 컴포넌트를 임포트
 import Image from "next/image"; // Next.js 이미지 컴포넌트 임포트
+import ThemeToggle from "./ThemeToggle";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center border border-b-black sticky top-0">
+    <header className="flex justify-between items-center border border-b-white sticky top-0 bg-[#373737]">
       <Link href="/">
         <div>
           <Image
@@ -20,6 +21,7 @@ function Header() {
         <Link href="/champions">챔피언 목록</Link>
         <Link href="/items">아이템 목록</Link>
         <Link href="/rotation">챔피언 로테이션</Link>
+        <ThemeToggle />
       </nav>
     </header>
   );

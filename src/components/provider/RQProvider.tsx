@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  isServer,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 function makeQueryClient() {
   return new QueryClient({
@@ -19,7 +15,7 @@ function makeQueryClient() {
 let browserQueryClient: QueryClient | undefined = undefined;
 
 function getQueryClient() {
-  if (isServer) {
+  if (typeof window === "undefined") {
     //서버일때
     return makeQueryClient(); // makeQueryClient()를 실행
   } else {

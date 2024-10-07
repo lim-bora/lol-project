@@ -10,28 +10,26 @@ type Champion = {
     full: string;
   };
   title: string;
-  rotationChampions: Champion[];
 };
 
-type ChampionsListItemProps = {
-  champion: Champion;
+type RotaitionListItemProps = {
+  rotation: Champion;
 };
 
-const ChampionsListItem = ({ champion }: ChampionsListItemProps) => (
+const RotationListItem = ({ rotation }: RotaitionListItemProps) => (
   <li className="border border-[#545454] flex flex-col items-center justify-center p-[10px] rounded-[20px]">
-    <Link href={`/champions/${champion.id}`}>
+    <Link href={`/rotation/${rotation.id}`}>
       <div className="w-full h-[200px] rounded-[14px]">
         <Image
-          src={`https://ddragon.leagueoflegends.com/cdn/14.19.1/img/champion/${champion.image.full}`}
-          alt={champion.name}
+          src={`https://ddragon.leagueoflegends.com/cdn/14.19.1/img/champion/${rotation.image.full}`}
+          alt={rotation.name}
           width={128}
           height={128}
         />
       </div>
-      <div>{champion.name}</div>
-      <div>{champion.title}</div>
+      <h2>{rotation.name}</h2>
+      <p>{rotation.title}</p>
     </Link>
   </li>
 );
-
-export default ChampionsListItem;
+export default RotationListItem;

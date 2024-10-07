@@ -1,7 +1,12 @@
 import React from "react";
+import ItemList from "../items/ItemList";
 
 const page = () => {
-  return <div>아이템page</div>;
+  return (
+    <div>
+      <ItemList />
+    </div>
+  );
 };
 
 export default page;

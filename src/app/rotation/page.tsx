@@ -1,7 +1,12 @@
 import React from "react";
+import RotationList from "./RotationList";
 
 const page = () => {
-  return <div>로어쩌구page</div>;
+  return (
+    <div>
+      <RotationList />
+    </div>
+  );
 };
 
 export default page;

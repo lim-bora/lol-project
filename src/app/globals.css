@@ -20,6 +20,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 다크 모드 관련 스타일 */
+html.light body {
+  background-color: #d8d8d8 !important;
+  color: #2a2a2a !important;
+}
+
+html.dark body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
