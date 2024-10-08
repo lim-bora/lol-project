@@ -4,7 +4,7 @@
 ### 프로젝트 소개
 Riot API를 활용하여 챔피언목록, 아이템목록, 무료로 사용가능한 챔피언 목록과 디테일한 정보를 볼 수 있습니다.
 
-#### 배포링크 https://lol-project-nine.vercel.app/
+#### 배포링크 https://lol-project-zeta.vercel.app/
 
 ### 개발기간
 * 2023.9.25~2023.10.07
